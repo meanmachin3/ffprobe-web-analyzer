@@ -1,8 +1,6 @@
 # `FFProbe Web Analyzer`
 > A Web-based FFProbe. Powered by FFmpeg, Vue and Web Assembly! 🦀.
 
-https://alfg.github.io/ffprobe-web-analyzer/
-
 ⚠️ A work-in-progress! Check back for updates!
 
 ⚠️⚠️ Currently works in Google Chrome and Microsoft Edge only due to limited support for [SharedArrayBuffer](https://caniuse.com/sharedarraybuffer). Github Pages does not support custom response headers to enable the [required CORS headers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer) for Firefox.
@@ -27,6 +25,7 @@ This will build the WASM module and place it into the `/dist` folder.
 
 * Install and run web:
 ```
+./build.sh && mv dist/*.* www/public
 cd www
 npm install
 npm run serve
@@ -53,3 +52,7 @@ npm run deploy
 
 ## License
 MIT
+
+## Credits
+
+https://alfg.github.io/ffprobe-web-analyzer/
